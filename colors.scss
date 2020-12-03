@@ -1,0 +1,42 @@
+$colors: (
+        white1: #ffffff,
+        white2: #f2f2f2,
+        white3: #d4d4d4,
+
+        gray1: #3c3f41,
+        gray2: #313335,
+        gray3: #2b2b2b,
+
+        fantasie-maganta: #a972cb,
+        fantasie-pink: #ef6eae,
+        fantasie-red: #ff7f82,
+        fantasie-orange: #ffa260,
+        fantasie-yellow: #e4cb58,
+        fantasie-lime: #8fc866,
+        fantasie-green: #19bc8b,
+
+        basic-default: #777,
+        basic-primary: #428bca,
+        basic-success: #5cb85c,
+        basic-danger: #d9534f,
+        basic-warning: #f0ad4e,
+        basic-info: #5bc0de,
+        basic-bdc: #29527a,
+
+        material-diamond: #57b8a5,
+        material-emerald: #4ac18d,
+        material-gold: #e9b211,
+        material-iron: #c4c4bf,
+        material-cooper: #ba6e3c
+);
+
+@each $name,$color in $colors {
+  .color-#{$name} {
+    color: $color;
+  }
+
+  .bg-color-#{$name} {
+    color: $color;
+  }
+
+}
